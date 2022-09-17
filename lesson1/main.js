@@ -1,8 +1,8 @@
 
+//sellecting items
 const btn = document.getElementById("button");
 const rainbow = ['red', 'orange', 'yellow', 'green', 'blue', 'rebeccapurple', 'violet'];
 
-//
 btn.addEventListener("click", function () {
     change()
 })
