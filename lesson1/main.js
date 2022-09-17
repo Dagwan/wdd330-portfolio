@@ -1,7 +1,7 @@
 
 //sellecting items
 const btn = document.getElementById("button");
-const rainbow = ['red', 'orange', 'yellow', 'green', 'blue', 'rebeccapurple', 'violet'];
+const randomColor = ["#8758FF", "#181818", "red", "orange", "yellow", "green", "blue", "#CD104D"];
 
 btn.addEventListener("click", function () {
     change()
@@ -9,7 +9,7 @@ btn.addEventListener("click", function () {
 
 //function to change background using the collors in the array.
 function change() {
-    document.body.style.background = rainbow[Math.floor(Math.random() * rainbow.length)];
+    document.body.style.background = randomColor[Math.floor(Math.random() * randomColor.length)];
 };
 
 
