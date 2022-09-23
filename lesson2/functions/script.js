@@ -41,7 +41,7 @@ function sayHello(name) {
 console.log(sayHello());
 
 function yellSomething(something = "what?") {
-  return `${something.toUpperCase()} Thank yo for saying something! `;
+  return `${something.toUpperCase()} Thank you for saying something! `;
 }
 
 console.log(yellSomething(sayHello(name)));
