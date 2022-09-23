@@ -1,0 +1,43 @@
+* W02 READINGS
+
+"
+This week reading shows how powerful arrays are in JavaScript. 
+Array accept all sort of data includes: string, number, Boolean,
+objects etc. They also accept array in array (nested) and do 
+important stuff with the information. But unfortunately, if the 
+size of the declared array is more than the required size, 
+then it can lead to memory wastage because they are static data 
+structure with a fixed size. Array can be manipulated or access 
+through their indexes. It starts counting from 0 – to the total 
+numbers of the given information using the length method. 
+With array, we store our information and access them accordingly.
+
+Another powerful achievement this week is the knowledge gained 
+while reading about logics. Logics has proved to be the lighter
+part of JavaScript, because it is fast in giving conditions and teste. 
+Logic can be used to test two possible condition to see if one met or not.
+For example; we can set a variable to const = “Friday”; and use the if…else 
+to do some stuff like:       
+const today = "Friday";
+if (today === "Friday") {
+    console.log("Good Friday");
+} else if (today != "Friday") {
+    console.log("Please wait until Friday");
+}
+
+Again, another great knowledge was gained from loop, studies shows that loop 
+is the fundamental part of software development because it helps in repeating 
+the same task over and over again. It also in one side perform as logic because
+it checks for a condition to see if it met or not.
+
+Lastly, functions help us to organize our codes and keep us from repeating the 
+same code over and over again rather it provides us with reusable one that we 
+can keep reusing instead of rewriting new ones. This act of reusing code seem 
+to be the good practices. We are advised not to write multiple lines of 
+codes, instead, keep them simple for easy manageable. Multiple lines of codes in 
+one function are bad practices.
+
+Thank you, Sir.
+
+Dagwan Pan’an Danladi
+"
