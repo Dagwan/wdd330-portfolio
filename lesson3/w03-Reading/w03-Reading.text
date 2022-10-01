@@ -1,0 +1,40 @@
+* W03 READINGS
+
+"
+This week reading shows a great understanding about 
+DOM manipulation. When we manipulate the DOM, we have 
+so much possibilities, we can create applications that 
+update the data of the page without needing a refresh. 
+We can create applications also that are customizable 
+by the user and then change the layout of the page 
+without a refresh too. 
+
+Since DOM is “Document Object 
+Model”, simply be understood as a tree also because 
+nodes are created by the browser. Each of these nodes 
+has its own properties and methods which can be manipulated. 
+Another great thing to know about the DOM is that it 
+represents the pages of our programs and change the 
+document structure, style and the content etc.
+
+Another great reading is found in the even object. 
+Studies shows that Even listeners are among the most 
+frequently used JavaScript structures in web design. 
+It gives us the ability to interact with the functionality
+of the HTML elements by listening to it different events that 
+take place on the page, such as when the user clicked 
+on a button or press a key on the keyboard or when the 
+elements load respectively.
+
+Again, another power achievement this week is gained from 
+reading about objects. Object literals are so convenient, 
+flexible in declaration and less code during declaration. 
+We can drop an object literal anywhere in our program with 
+no previous set and it will work just fine which can be very
+handy. Object uses the dot notation and square bracket to access 
+it contain which also uses the indexes.
+
+Thank you, Sir.
+
+Dagwan Pan’an Danladi
+"
