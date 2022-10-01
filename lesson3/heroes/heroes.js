@@ -13,7 +13,7 @@ flash.textContent = "Flash";
 heroes.appendChild(flash)
 h1.replaceChild(newText, oldText)
 console.log(heroes)
-console.log(hi)
+console.log(h1)
 
 
 const superman = heroes.children[0];
