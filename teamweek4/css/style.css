@@ -1,0 +1,41 @@
+/*Main table board*/
+.board {
+    width: 320px;
+    height: 320px;
+}
+
+.board td, .board tr {
+    width: 35%;
+    height: 35%;
+}
+
+.board td {
+    border-right: 3px solid green;
+    border-bottom: 3px solid green;
+    font-size: 5em;
+    text-align: center;
+}
+
+.board td:last-child {
+    border-right: 0;
+    
+}
+
+.board tr:last-child td{
+    border-bottom: 0;
+}
+
+/*Div Board styling*/
+.divboard {
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px;
+    justify-content: center;
+}
+
+.divboard>div {
+    border: 1px solid green;
+    font-size: 5em;
+    text-align: center;
+}
+
