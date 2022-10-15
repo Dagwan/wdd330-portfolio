@@ -1,0 +1,47 @@
+* W05 READINGS 
+" 
+This week focuses on how we can manage our codes while 
+still writing them to prevent us from having too many bugs. 
+It is seen as good practice to write codes that can be understood 
+by even a non-programmer. Debugging gives us the opportunity to 
+report errors as soon as possible as they occur in our code, 
+making our software development process less stress-free. 
+More accessible interpretations. Debugging provides us with 
+more information about data structures, making it so easier 
+to interpret. 
+
+Studies show that Testing and Debugging are important activities 
+in software development and are also good practices because 
+sometimes we write programs that run with logic, syntax, 
+and system errors. Logical are sometimes difficult to 
+identify particularly for new programmers because sometimes 
+it hard for them to quickly understand what is going on. 
+
+For example, the code below will run but having bug in it. 
+
+function amIOldEnough(myAge){ 
+    if (myAge = 12) { 
+    alert(myAge);  
+    return 'No, sorry.';     
+}else if (myAge < 18) { 
+    return 'Only if you are accompanied by an adult.';     
+}else {  
+    return 'Yep, come on in!';     
+}} 
+amIOldEnough(21);  
+
+The above code is supposed to return a code block in 
+lines 28 and 29 because I am passing an argument of (23) 
+to the call to function, but it returns a code block in 
+lines 23, 24 and 25 because instead of testing for equality 
+myAge ===12; I wrong assign 12 as a value of myAge.  
+
+Thank you, Sir.  
+
+Dagwan Pan’an Danladi
+" 
+
+ 
+ 
+
+ 
