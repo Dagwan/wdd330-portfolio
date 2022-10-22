@@ -1,7 +1,10 @@
+//import function
 import { qs, writeToLS, readFromLS, bindTouch } from "./utils.js";
-
+//  private code here. Not exported from the module
+// we need a place to store our list of todos in memory
 let liveToDos = null;
 
+// View code here
 function renderList(list, element, hidden) {
   console.log(list);
   element.innerHTML = "";
@@ -23,34 +26,24 @@ function getToDos(key) {
   return liveToDos;
 }
 
-function addToDo(value, key) {  
-  // use Date.now()
+function addToDo(value, key) {
+  // use Date.now() for UTC millisecond string.
   const newToDo = {
     id: new Date(),
     content: value,
     completed: false
   };
+
   liveToDos.push(newToDo);
-  //writeToLS(key, liveToDos);
+  writeToLS(key, liveToDos);
 }
-
-function removeToDo(value, key) {
-  const removTodo = {
-    id: new Date(),
-    content: value,
-    completed: true
-  };
-  liveToDos.pop(removTodo)
-}
-
-
-
-// this would be done last if you still have time
+// this would be done last if you still have time...and if you haven't blown too many minds yet :)  If you do get here...mention how similar this method is with getToDos...they could probably be combined easily.
 function filterToDos(key, completed = true) {
   let toDos = getToDos(key);
+
+  // return a list of either completed or not completed toDos based on the parameter.
   return toDos.filter(item => item.completed === hidden);
 }
-
 function findTodo(id) {}
 function completeTodo(id) {}
 
@@ -64,8 +57,6 @@ export default class ToDos {
     // why bind here?
     bindTouch("#addToDo", this.newToDo.bind(this));
     this.listToDos();
-    bindTouch("#removeTodo", this.removTodo.bind(this));
-    this.listToDos();
   }
 
   newToDo() {
@@ -75,15 +66,22 @@ export default class ToDos {
     this.listToDos();
   }
 
-  removTodo() {
-    const task2 = document.getElementById("todoInput");
-    removeToDo(task.value, this.key);
-    task2.value = "";
-    this.listToDos();
-  }
-
   listToDos(hidden = true) {
     renderList(getToDos(this.key), this.listElement, hidden);
   }
 }
 
+//  This could also be done as a simple object literal as well.
+// const ToDos = {
+//   _key: null,
+//   _listElement: null,
+//   newToDo: function(value) {
+//     addToDo(value);
+//     this.listToDos();
+//   },
+//   listToDos: function(hidden = true) {
+//     renderList(getToDos(), this.listElement, hidden);
+//   }
+// };
+
+// export default toDos;

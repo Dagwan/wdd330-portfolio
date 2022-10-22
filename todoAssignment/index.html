@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Todo Assignment</title>
+		<link rel="stylesheet" href="css/styles.css" />
+
+		<body>
+			<!-- App Wrapper -->
+			<main class="app">
+				<!-- Welcome note -->
+				<section class="welcome">
+					<h1 class="title">
+						Welcome, <input type="text" id="name" placeholder="Please your name here"
+							/>
+					</h1>
+				</section>
+
+				<!-- New Todo -->
+				<section class="create-todo">
+					<h2>TODO LIST</h2>
+					<form id="new-todo-form">
+						<h3>What's on your todo?</h3>
+						<input
+							type="text"
+							placeholder="Enter task here..."
+							name="content"
+							id="content" />
+						<h2>Pick a category</h2>
+						<div class="options">
+							<label>
+								<input type="radio" name="category" id="category1" value="Lecture" />
+								<span class="bubble lecturer"></span>
+								<div>Lecturer</div>
+							</label>
+							<label>
+								<input type="radio" name="category" id="category2" value="student" />
+								<span class="bubble student"></span>
+								<div>Student</div>
+							</label>
+						</div>
+						<input type="submit" value="Add todo" />
+					</form>
+				</section>
+
+				<!-- Todo List -->
+				<section class="todo-list">
+					<h2>TODO LIST</h2>
+					<div class="list" id="todo-list"></div>
+				</section>
+
+			</main>
+			<script src="js/main.js"></script>
+
+		</body>
+	</html>

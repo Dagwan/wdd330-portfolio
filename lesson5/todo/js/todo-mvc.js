@@ -31,7 +31,17 @@ class ToDoModel {
       completed: false
     };
     this.toDos.push(newToDo);
-    writeToLS(this.key, this.toDos);
+    //writeToLS(this.key, this.toDos);
+  }
+
+  removeTodo(value) {
+    const removTodo = {
+      id: new Date(),
+      content: value,
+      completed: true
+    };
+    this.toDos.pop(value);
+    
   }
   findTodo(id) {}
   completeTodo(id) {}
@@ -52,12 +62,17 @@ export default class ToDoController {
     // opted to store the listElement inside the class.
     this.listElement = listElement;
     // create a new instance of our model and add it to the controller.
-    this.toDoModel = new ToDoModel('todo');
+    this.toDoModel = new ToDoModel("todo");
     this.listToDos();
   }
 
   newToDo(value) {
     this.toDoModel.addToDo(value);
+    this.listToDos();
+  }
+
+  removTodo(value) {
+    this.toDoModel.removeTodo(value);
     this.listToDos();
   }
 
@@ -72,37 +87,10 @@ function renderList(list, element, hidden) {
 
   list.forEach(toDo => {
     const item = document.createElement('li');
-    const formattedDate = new Date(toDo.id).toLocaleDateString('en-US');
+    const formattedDate = new Date(toDo.id).toLocaleDateString("en-US");
 
     item.innerHTML = `${formattedDate}: ${toDo.content}`;
     element.appendChild(item);
   });
 }
 
-// Another model for OOP in Javascript is factory functions.  This is an example of the todoModel as a factory function
-// factory function
-// function ToDoModel(key) {
-//   const readFromLS = function(key) {
-//     return JSON.parse(window.localStorage.getItem(key));
-//   };
-//   const writeToLS = function(key, data) {
-//     window.localStorage.setItem(key, JSON.stringify(data));
-//   };
-//   let toDos = readFromLS(key) || [];
-//   return {
-//     get: function() {
-//       return toDos;
-//     },
-//     add: function(value) {
-//       // use Date.now() for UTC millisecond string.
-//       const newToDo = {
-//         id: new Date(),
-//         content: value,
-//         completed: false
-//       };
-//       toDos.push(newToDo);
-//       writeToLS(key, toDos);
-//     }
-//   };
-// }
-// const myToDos = ToDoModel('todo');
