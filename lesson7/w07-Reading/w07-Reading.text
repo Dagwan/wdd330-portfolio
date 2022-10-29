@@ -1,0 +1,64 @@
+* W05 READINGS 
+" 
+This week's reading focuses on Further function. 
+A function is a set of statements that take inputs, 
+do some specific computations, and produce the output. 
+The idea is to put something commonly or repeatedly 
+done together and make a function so that instead of 
+writing the same code over and over for different 
+inputs we could just call the function and voila! Again, 
+the function allows us to define a block of code, 
+give it a name and then execute it as many times as we want. 
+
+I learned that we could treat functions as values and assign 
+them to another variable, pass them as arguments to another 
+function or even return them from another function. This is 
+seen as the power of function. It also has higher-order 
+functions because it could act as a first-class code. 
+
+Another powerful knowledge was gained from reading Asynchronous 
+JavaScript And XML (AJAX). Ajax is a strategy that allows our 
+web pages to interact with our server and they dynamically 
+update the web pages without having us reload the page each 
+time. This processing allows our data to be sent and received 
+in the background as well as portions of our pages to be updated 
+in response to our user events while the rest of the program 
+continues to work without, we worry about anything. 
+
+One powerful important of AJAX is that it has a part called 
+API (Application Programming Interface) that is made available 
+in our programming language to allow us as a developer to create 
+complex functionality more easily. This abstracts more complex 
+code away from us, providing us with some easier syntax to use 
+in its place. This gives us the ability to use some external 
+resources in our own application without having to go against 
+copyright policies. 
+
+Some random examples of code that is used to fetch and request 
+some response from external resource are: 
+const url = ‘https://dagwanportfolio.netlify.app/’; 
+const headers = new Headers({ 
+    'Content-Type': 'text/plain', 
+    'Accept-Charset': 'utf-8', 
+    'Accept-Encoding': 'gzip,deflate' 
+}) 
+const request = (url, { 
+    headers: headers 
+}) 
+fetch(request).then(function (response) { 
+        if (response.ok) { 
+            return response; 
+        } 
+        throw Error(response.statusText); 
+    }).then(response => // do something with response ) 
+        .catch(error => console.log('There was an error!')); 
+
+        Thank you, sir. 
+
+Dagwan Pan’an Danladi 
+" 
+
+ 
+ 
+
+ 
