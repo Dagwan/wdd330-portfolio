@@ -1,0 +1,47 @@
+* W08 READINGS 
+" 
+        This week introduces me to so many things which I am already familiar
+        with, while others are coming new to me. I enjoy reading while learning
+        current ideas including practicing some development skills set most
+        importantly the Video, Audio, SVG, Canvas elements, etc. both in HTML
+        (Hypertext Markup Language), JavaScript, and CSS (Cascading Style
+        Sheets).
+
+        I learned that videos on the web are based on container formats and
+        codecs and the container serves as a wrapper that will store all the
+        necessary data that would be comprised of the video file being accessed
+        (in other words; behave like ZIP). Some examples of these video
+        containers are flash video, MPEG-4, MP4 or M4V, and AVI, respectively.
+        It also includes a video track and audio track with markers that help
+        synchronize them and other bits of metadata that describe the content. A
+        video codec seems like an algorithm for encoding and decoding a
+        multimedia data stream while audio codecs deal with the streaming of
+        sound rather than video frames. The relevant ones in HTML5 are AAC,
+        Vorbis, and MP3, respectively.
+
+        I also learned that HTML5 canvas API is used to draw anything we can
+        just imagine all through JavaScript. It is used to improve the
+        performance of our website by avoiding the need to download images over
+        the network. We can use canvas to draw shapes and lines, arcs and text,
+        gradients, and patterns, respectively. It gives us the power to
+        manipulate our pixels in images and videos as well. It also has the
+        power to take our modern-looking color videos and convert them into a
+        conventional black and white to match the overall look and feel of our
+        desired website.
+
+        Lastly, Scalable Vector Graphics (SVG0 is a format that allows us to
+        describe vector graphics using XML. SVG preserves the quality of images
+        in different formats as it blows them up or shrinks them down. It is
+        learned that we could use it to do many of the same tasks we do with
+        canvas including drawing paths, shapes, text, gradients, and patterns.
+        They are especially useful and open-source tools that are relevant.
+
+        Thank you, sir. 
+        
+        Dagwan Pan’an Danladi 
+" 
+
+ 
+ 
+
+ 
