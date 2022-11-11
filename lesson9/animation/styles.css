@@ -1,0 +1,13 @@
+#square {
+    margin: 100px;
+    width: 400px;
+    height: 400px;
+    background: #d16;
+    animation: spin 4s line infinite;
+}
+@keyframes spin { from { transform:rotate(0deg); } to { transform:rotate(3600deg); } }
+h1 {
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+}

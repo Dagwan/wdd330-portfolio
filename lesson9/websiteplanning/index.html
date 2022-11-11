@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="description" content="Website Planning Website-BYUI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Planning</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <script src="js/script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Work+Sans&display=swap"
+      rel="stylesheet"
+      />
+  </head>
+  <body>
+    <header>
+      <h1>Dan Market Place</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="product.html">Audience</a></li>
+        <li><a href="color.html">About</a></li>
+        <li><a href="text.html">Typography</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="index">
+        <h1>Purpose</h1>
+        <p>
+          The purpose of this site is to help further the interests of small
+          businesses in a local area. The activities can range from retails, to
+          local whole representatives to charitable works for the
+          betterment of the community.
+        </p>
+
+        <p>The proposed domain website is indicated below:</p>
+        <p>danmarketplace.org</p>
+
+      </section>
+      <section>
+        <h1>Modules</h1>
+        <p>
+          // global imports<br>
+import './src/toggleSidebar.js';<br>
+import './src/cart/toggleCart.js';<br>
+import './src/cart/setupCart.js';<br>
+// specific imports<br>
+import fetchProducts from './src/fetchProducts.js';<br>
+import { setupStore, store } from './src/store.js';<br>
+import display from './src/displayProducts.js';<br>
+import { getElement } from './src/utils.js';<br>
+
+       </p>
+      </section>
+      <h1>Wireframes</h1>
+      <h2>Desktop Wireframe</h2>
+      <img src="images/desktopWireframe.jpg" alt="Wireframe for Desktop"><br>
+      <h2>Tablet Wireframe</h2>
+      <img src="images/tabletWireframe.jpg" alt="Wireframe for Tablet"><br>
+      <h2>Mobile Wireframe</h2>
+      <img src="images/mobileWireframe.jpg" alt="Wireframe for Mobile">
+    </main>
+    <footer>
+      <p>Contacts:</p>
+      <p>Email: </p>
+      <p>Address:</p>
+      <p>
+        &copy; <span id="year"></span> Dagwan Pan'an Danladi Last Updated
+        <span id="update"></span>
+      </p>
+    </footer>
+  </body>
+</html>
