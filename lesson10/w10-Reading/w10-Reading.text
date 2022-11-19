@@ -1,0 +1,43 @@
+* W10 READINGS 
+" 
+I have learned a great deal this week about how to validate forms for
+proper user experience both on desktop and mobile. This week's studies
+show that it is good practice to make our forms on the web page more
+user-friendly by providing easy-to-use and rich features. Doing so will
+save server traffic by validating user input before sending it to the
+server. Respond immediately if there is any mistake in user data without
+waiting for the page to reload. It also shows that we can use our
+mark-up elements to set our validation such as required, pattern, text,
+number, date etc.
+
+Again, one of the most relevant and professional ways to validate our
+forms is to use JavaScript. JavaScript provides us with the facility to
+validate our forms on the client side so data processing will be faster
+than server-side validation. Most web developers prefer JavaScript form
+validation. Because through it, we can validate names, passwords,
+emails, dates, mobile numbers, and more fields too.
+
+It is learned that the reason for this validation is to make sure we are
+sending the right information to our server and to check to make sure
+all the mandatory fields are filled in appropriately.
+
+Another knowledge gained this week is from how we can use fetch API. It
+provides us with a JavaScript interface for accessing and manipulating
+parts of the protocol, such as requests and responses. It also provides
+us with a global fetch method that provides an easy and logical way to
+fetch resources asynchronously across the network.
+
+Also, we could use the fetch method to return a promise that resolves
+into a response object...then get the actual data, we could also call
+one of the methods of the response object. For example, text or json.
+method would resolve into the actual data.
+
+Thank you, sir.
+
+Dagwan Pan’an Danladi
+" 
+
+ 
+ 
+
+ 

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="api.css" />
+
+    <title>Simple API</title>
+  </head>
+  <body>
+    <div class="container">
+        
+        <h1>Check Response</h1>
+
+        <label>Ask Question... </label>
+        
+        <input id="input" type="text" onkeypress="handleKeyEnter(event)" value="" required />
+
+        <button id="button" type="submit">
+            Get Answer
+        </button>
+
+        <p id="error"></p>
+    
+        <div id="answer"></div>
+
+    </div>
+
+  </body>
+  <script src="script.js"></script>
+</html>
